@@ -1,0 +1,80 @@
+@import "./blocks/_header.scss";
+@import "./blocks/footer";
+
+$accent: #b62b2b;
+$color-title: #ff7444;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffff;
+}
+
+h1, h2, h3, h4 {
+  color: $color-title;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin-top: 240px;
+}
+
+.navbar {
+  padding-top: unset;
+  padding-bottom: unset;
+}
+
+.cards {
+  .title {
+    padding-bottom: 20px;
+  }
+}
+
+.container-fluid {
+  background-color: white;
+  @include box-shadow(0 0 20px rgba(50, 50, 50, 0.15));
+  padding: 10px;
+}
+
+.middle-block {
+  background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+  padding: 96px 0;
+}
+.text-group {
+  padding: 0 10%;
+}
+.accordion-block {
+  padding: 50px 0;
+}
+.carousel-block__text {
+  font-size: 18px;
+  line-height: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .site-rights {
+    text-align: center;
+  }
+  .card {
+    width: 100% !important;
+  }
+
+}
+
+
+
+@media screen and (max-width: 320px) {
+  main {
+    margin-top: 275px;
+  }
+}

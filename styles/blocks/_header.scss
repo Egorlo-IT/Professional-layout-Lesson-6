@@ -1,0 +1,52 @@
+@mixin box-shadow($shadow) {
+    box-shadow: $shadow;
+}
+
+$color-bckg-top: rgb(211, 208, 208);
+$accent: rgb(212, 29, 29);
+
+.b-header {
+    display: flex;
+    background-color: $color-bckg-top;
+    flex-direction: column;
+}
+
+.b-header_fixedTop {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.b-header_shadow {
+    box-shadow: 0 0 20px #3f9fd5;
+}
+
+.b-header__text {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.b-header__text_padding {
+    padding: 10px;
+}
+
+.b-header__text_accent {
+    color: $accent;
+}
+
+.b-header__text_small {
+    font-size: 12px;
+}
+
+.b-header__text_medium {
+    font-size: 18px;
+}
+
+.b-header__text_large {
+    font-size: 24px;
+}
+
+.b-header__text_bold {
+    font-weight: 500;
+}
